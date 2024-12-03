@@ -49,8 +49,8 @@ MYSQL_PASSWORD=$MYSQL_PASSWORD
 MYSQL_DB=$MYSQL_DB
 FLASK_ENV=development
 
-FRONTEND_URL=http://$APP_SERVER_IP:3000
-CORS_ORIGIN=http://$APP_SERVER_IP:3000
+FRONTEND_URL=http://$APP_SERVER_IP
+CORS_ORIGIN=http://$APP_SERVER_IP
 EOF
     echo "Backend .env file configured successfully."
 else
