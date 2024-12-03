@@ -33,7 +33,7 @@ echo "Building Docker image for backend..."
 BACKEND_DIR="../backend"
 if [[ -d $BACKEND_DIR ]]; then
     cd $BACKEND_DIR || { echo "Error: Failed to navigate to $BACKEND_DIR!"; exit 1; }
-    docker build -t "$DOCKER_USERNAME/backend-app:02" . || { echo "Error: Failed to build backend Docker image!"; exit 1; }
+    docker build -t "$DOCKER_USERNAME/backend-app:01" . || { echo "Error: Failed to build backend Docker image!"; exit 1; }
 else
     echo "Error: Backend directory not found at $BACKEND_DIR!"
     exit 1
