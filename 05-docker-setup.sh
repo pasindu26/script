@@ -41,7 +41,7 @@ fi
 
 # Run backend Docker container
 echo "Running backend Docker container..."
-docker run -d --restart unless-stopped -p 5000:5000 --name backend-app "$DOCKER_USERNAME/backend-app:02" || { echo "Error: Failed to run backend Docker container!"; exit 1; }
+docker run -d --restart unless-stopped -p 5000:5000 --name backend-app "$DOCKER_USERNAME/backend-app:01" || { echo "Error: Failed to run backend Docker container!"; exit 1; }
 
 # Run frontend Docker container
 echo "Running frontend Docker container..."
