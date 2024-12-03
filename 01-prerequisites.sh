@@ -30,7 +30,7 @@ echo "Updating package list..."
 sudo apt-get update -y || error_exit "Failed to update package list."
 
 echo "Installing Git..."
-sudo apt-get install git-all -y || error_exit "Failed to install Git."
+sudo apt-get install git -y || error_exit "Failed to install Git."
 
 echo "Installing Curl..."
 sudo apt-get install curl -y || error_exit "Failed to install Curl."
